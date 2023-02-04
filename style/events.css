@@ -1,0 +1,20 @@
+body{
+    background: url(../images/img1.3.jpg)no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: aqua;
+    font-size: 20px;
+}
+.div12{
+    margin-left: 290px;
+    margin-top: 60px;
+}
+a:hover{
+    font-family: Phosphate;
+    font-size: 30px;
+}
+.ae{
+    box-shadow: 8px -8px 11px -3px red , -2px 8px 8px blueviolet , -8px -8px 8px blue;
+}

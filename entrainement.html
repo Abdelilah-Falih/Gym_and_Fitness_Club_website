@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/entrainement.css">
+    <title>Entaînemets Personel </title>
+</head>
+<body>
+    <div class="div12">
+        <table style="text-align: center;">
+            <tr>
+                <td>
+                    <a href="home.html">Accueil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </td>
+                <td>
+                    <a href="club.html">Club&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </td>
+                <td>
+                    <a href="activite.html">Activités&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </td>
+                <td>
+                    <a href="entrainement.html">Entraînement Personnel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </td>
+                
+                <td>
+                    <a href="nutrition.html">Nutrition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </td>
+                <td>
+                    <a href="events.html">Events&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <fieldset style="margin-top: 200px;width: 600px; border-radius: 20px;">
+        <legend>
+            <a style="color: antiquewhite;font-size: 30px;" onclick="afentr()">Un Entraînement Personnel</a>
+        </legend>
+        <p style="font-size: 30px;color: aliceblue;display: none;" id="entr">Avec dévouement, passion et intelligence, notre team sportive adapte les activités à votre profil et à vos objectifs pour vous faire progresser tout en vous amusant. Vivez le must du coaching sur mesure grâce à un remarquable accompagnement sportif, diététique et mental, apte à révéler votre plein potentiel.</p>
+    </fieldset>
+    <fieldset style="width: 700px; border-radius: 20px;float: right;background-color: #683ab79d;">
+        <legend>
+            <a style="color: antiquewhite;font-size: 30px;" onclick="afbadr()">BADR & IKRAM</a>
+        </legend>
+        <p style="font-size: 20px;font-family: Gill Sans;color: darkorange; display: none; "id="badr"><i>« Lorsque j ai commence a m'entrainer avec Badr, ja
+            eu des problèmes d'endurance. Souvent, ie ne pouvais
+            pas terminer les exercices. Maintenant, après une
+            seance d'entrainement de deux heures, j arrive a
+            terminer l'activité et ie me sens en pleine forme. Sa
+            stratéaie d'entraînement me force à puiser au olus
+            protond de moi-meme. Badr m'a aide a acquerir de
+            l'endurance et de la discipline dans des sports
+            auxquels ie n'ai iamais pensé. A travers sa passion.
+            arrive a communiquer de la puissance a ses athlptes
+            et leurs fixe des niveaux d'entrainement eleves. Bien
+            au'il ne plaisante pas beaucoup, il a su créer une
+            dynamique d'équipe très agréable et se montrer
+            toujours disponible. Il sait comment tirer profit de
+            chacune de vos forces individuelles pour obtenir le
+            meilleur résultat possible. Plus important encore: il
+            m'a permis d'arriver à des résultats drastiques en pel
+            de temps.</i></p>
+    </fieldset>
+    <script>
+        entr=document.getElementById("entr")
+        badr=document.getElementById("badr")
+        function afbadr(){
+            badr.style.display="block"
+        }
+        function afentr(){
+            entr.style.display="block"
+        }
+    </script>
+</body>
+</html>

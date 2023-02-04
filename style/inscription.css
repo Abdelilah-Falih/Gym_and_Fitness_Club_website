@@ -1,0 +1,44 @@
+body{
+    background: url(../images/img5.jpg) no-repeat;
+    background-size: cover;
+}
+mark{
+    background-color: rgba(255,0,0,0);
+    border: 2px solid red;
+    border-radius: 290px;
+    color: white;
+}
+fieldset{
+    margin-top: 100px;
+    height: 350px;
+    width: 490px;
+    color: red;
+}
+.photo{
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+    font-size: 80px;
+    font-family: Phosphate;
+}
+#but{
+    background-color: red;
+}
+fieldset:hover{
+
+    box-shadow: 8px -8px 11px -3px red , -2px 8px 8px blueviolet , -8px -8px 8px blue;
+}
+input{
+    border-radius: 20px;
+    background-color: rgba(255,0,0,0);
+    font-size: 20px;
+    border-color: brown;
+    color: white;
+    font-family: Bernard MT;
+}
+label{
+    font-family: Bradley Hand;
+    font-size: 20px;
+}
+
+

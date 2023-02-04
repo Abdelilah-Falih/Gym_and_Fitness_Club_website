@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/inscription.css">
+    <title>INSCRIPTION</title>
+</head>
+<body>
+    <div class="photo">PARK &nbsp;&nbsp;F I T N E S S </div>
+    <div class="information">
+    
+    <form style="text-align: center;">
+        <fieldset>
+        <legend style="text-align: center;"><h1><mark><i>&nbsp;Renseignements Personnels :&nbsp;&nbsp;</i></mark></h1></legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="nom"><b>Nom:&nbsp;&nbsp;</b> </label>
+                    </td>
+                    <td>
+                        <input type="text" id="nom" placeholder="saisir voter nom...">
+                    </td>
+                    <td>
+                        <a id="onom"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="prenom"><b>Prénom:&nbsp;&nbsp;</b> </label>
+                    </td>
+                    <td>
+                        <input type="text" id="prenom"placeholder="saisir voter Prénom...">
+                    </td>
+                    <td>
+                        <a id="oprenom"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="daten"><b>Date De Naissance:&nbsp;&nbsp;</b></label>
+                    </td>
+                    <td>
+                        <input type="date" id="daten">
+                    </td>
+                    <td>
+                        <a id="odaten"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sexe"><b>Sexe:&nbsp;&nbsp;</b> </label>
+                    </td>
+                    <td>
+                        <label for="m"><b>M:&nbsp;&nbsp;</b> </label><input type="radio" id="m"name="sexe">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="f"><b>F:&nbsp;&nbsp;</b> </label><input type="radio" id="f" name="sexe">
+                    </td>
+                    <td>
+                        <a id="osexe"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email"><b>Email:&nbsp;&nbsp;</b> </label>
+                    </td>
+                    <td>
+                        <input type="email" id="email"placeholder="saisir voter e-mail...">
+                    </td>
+                    <td>
+                        <a id="oemail"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="motde"><b>Mot De Passe:&nbsp;&nbsp;</b> </label>
+                    </td>
+                    <td>
+                        <input type="password" id="motde"placeholder="saisir voter mot de passe...">
+                    </td>
+                    <td>
+                        <a id="omotde"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        <input type="button" value="Envoyer" onclick="check()"id="but">
+                    </td>
+                    <td>
+                        <input type="reset" value="Effacer" id="but">
+                    </td>
+                </tr>
+            </table>
+        <div id="divmas" style="display:none">
+            <a href="home.html" style="color: aqua;">LET 'S GO</a>
+        </div>
+        <br>
+        <div id="divfim" style="display:none">
+            <a href="home2.html" style="color: aqua;"> LET 'S GO</a>
+        </div>
+    </fieldset>
+    </div>
+
+
+    <script>
+        m=document.getElementById("m")
+        f=document.getElementById("f")
+        divmas=document.getElementById("divmas")
+        divfim=document.getElementById("divfim")
+        function check(){
+            if(m.checked){
+                divmas.style.display="block"
+                divfim.style.display="none"
+            }
+            else if(f.checked){
+                divmas.style.display="none"
+                divfim.style.display="block"
+            }
+            else{
+                divfim.style.display="none"
+                divmas.style.display="none"
+                alert("saisir votre sexe !")
+            }
+        }
+
+
+
+    </script>
+
+
+
+</body>
+</html>
